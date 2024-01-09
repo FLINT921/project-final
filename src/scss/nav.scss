@@ -1,0 +1,139 @@
+/* Шапка */
+
+.nav {
+  display: flex;
+  margin-bottom: 24px;
+  width: 100%;
+  height: 88px;
+  background-color: #ffffff;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: 1440px) {
+    justify-content: flex-end;
+    margin-bottom: 8px;
+    margin-top: 42px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+
+  &__item-button {
+    display: flex;
+  }
+
+  &__item-button label {
+    display: none;
+    @media (min-width: 1440px) {
+      display: flex;
+      margin-right: 8px;
+      align-items: center;
+      color: #1b1c21;
+      font-size: 16px;
+      font-family: TT Lakes;
+      font-weight: 500;
+      line-height: 24px;
+      word-wrap: break-word;
+    }
+  }
+
+  &__item-button_none {
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__item {
+    margin: auto 0;
+    width: 40px;
+    height: 40px;
+    background-color: #ff3e79;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  &__item:hover {
+    opacity: 0.8;
+    transition: 0.7s;
+  }
+
+  &__item-logo {
+    width: 96.55px;
+    height: 50.81px;
+    background-color: #ffffff;
+    background-image: url(../img/menu/logo.svg);
+    border-radius: 0;
+  }
+
+  &__item-divider {
+    margin: auto 0;
+    margin-right: 20px;
+    margin-left: 16.73px;
+    width: 2px;
+    height: 32px;
+    background-color: #eaeaea;
+    @media (min-width: 768px) {
+      margin-left: 20px;
+    }
+  }
+
+  &__item-divider_none {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  &__item-burger {
+    margin-right: 16.73px;
+    background-image: url(../img/menu/burger.svg);
+    @media (min-width: 768px) {
+      margin-right: 0;
+    }
+  }
+  &__item-burger_close {
+    margin-right: 16.73px;
+    background-image: url(../img/menu/burger-close.svg);
+    @media (min-width: 1440px) {
+      display: none;
+    }
+  }
+
+  &__item-path {
+    background-image: url(../img/menu/path.svg);
+  }
+
+  &__item-call {
+    display: none;
+    margin-right: 16px;
+    background-image: url(../img/menu/call.svg);
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  &__item-chat {
+    display: none;
+    margin-right: 16px;
+    background-image: url(../img/menu/chat.svg);
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  &__item-profile {
+    display: none;
+    margin-right: 16px;
+    background-image: url(../img/menu/profile.svg);
+    @media (min-width: 768px) {
+      display: block;
+      margin-right: 0;
+    }
+  }
+
+  &__item-repair {
+    margin-right: 16px;
+    background-image: url(../img/menu/repair.svg);
+  }
+
+  &__item-checkstatus {
+    background-image: url(../img/menu/checkstatus.svg);
+  }
+}

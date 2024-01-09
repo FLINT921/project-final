@@ -1,0 +1,138 @@
+/* Бургер-меню */
+.burger {
+  display: none;
+  position: absolute;
+  width: 320px;
+  height: 2040px;
+  background-color: #fff;
+  z-index: 12;
+  box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2);
+  @media (min-width: 1440px) {
+    display: block;
+    position: relative;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0 24px;
+  height: 887px;
+  & .nav {
+    margin-bottom: 27.54px;
+    height: 88.46px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+      justify-content: space-between;
+    }
+  }
+  &__footer .nav {
+    height: 40px;
+  }
+
+  & .nav__item-call,
+  & .nav__item-chat,
+  & .nav__item-profile {
+    display: block;
+  }
+}
+.main-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  & a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    height: 32px;
+  }
+
+  & a:hover {
+    color: #7e7e82;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  & a:hover::before {
+    position: absolute;
+    content: ' ';
+    margin-left: -24px;
+    margin-right: 20px;
+    width: 4px;
+    height: 32px;
+    background-color: #41f6d7;
+    border-radius: 0 4px 4px 0;
+  }
+
+  &__item_checked {
+    color: #7e7e82;
+  }
+
+  &__item_checked::before {
+    position: absolute;
+    content: ' ';
+    margin-left: -24px;
+    margin-right: 20px;
+    width: 4px;
+    height: 32px;
+    background-color: #41f6d7;
+    border-radius: 0 4px 4px 0;
+  }
+
+  &__item {
+    color: #1b1c21;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    word-wrap: break-word;
+  }
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  margin-bottom: 40px;
+  &__mail {
+    color: #1b1c21;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+  &__number {
+    color: #1b1c21;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
+.lang {
+  display: flex;
+  align-items: center;
+  column-gap: 7px;
+  padding: 0;
+  margin-bottom: 32px;
+
+  &__input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  &__box {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  &__input:checked + .lang__box {
+    color: #7e7e82;
+  }
+}

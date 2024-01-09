@@ -1,0 +1,104 @@
+.page-content__right-block {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 24px 16px;
+  width: 320px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 12;
+  @media (min-width: 1440px) {
+    padding: 0 32px;
+    border-left: 1px solid #d9fff5;
+    box-shadow: 16px 0px 52px 0px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px 0px rgba(69, 79, 126, 0.02);
+  }
+  & .title {
+    @media (min-width: 1440px) {
+      position: relative;
+      top: 0;
+      margin-bottom: 0;
+    }
+  }
+  & .title__text {
+    margin-top: 32px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  & .nav__item-burger_close {
+    @media (min-width: 1440px) {
+      display: block;
+      position: absolute;
+      top: 32px;
+      left: -65px;
+    }
+  }
+}
+
+.feedback {
+  display: none;
+}
+
+.call {
+  display: none;
+}
+
+.right-block {
+  &__input-block {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 19px;
+  }
+  &__input {
+    padding-left: 16px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid #eaeaea;
+    font-family: TT Lakes;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+  }
+  &__text {
+    color: #7e7e82;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    & span {
+      color: #ff3e79;
+    }
+  }
+  &__button {
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #ff3e79;
+
+    color: #fff;
+    text-align: right;
+    font-family: TT Lakes;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 200% */
+    letter-spacing: -0.15px;
+    text-transform: uppercase;
+  }
+  &__button::after {
+    position: relative;
+    top: 0;
+    content: ' ';
+    margin-left: 2px;
+    width: 27px;
+    height: 24px;
+    background-image: url(../img/menu/goside.svg);
+  }
+}

@@ -1,0 +1,79 @@
+// О нас
+
+.about {
+  display: flex;
+  color: #1b1c21;
+  font-family: TT Lakes;
+  word-wrap: break-word;
+  flex-direction: column;
+  justify-content: center;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  &__text-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0.2px;
+    @media (min-width: 768px) {
+      line-height: 20px;
+    }
+    @media (min-width: 1440px) {
+      padding-top: 9.22px;
+    }
+  }
+
+  &__text span {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+      & span {
+        display: none;
+      }
+    }
+    @media (min-width: 1440px) {
+      display: block;
+      & span {
+        display: block;
+      }
+    }
+  }
+
+  &__read-more__button {
+    margin: 16px 0 16px 8px;
+    padding-left: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    background-image: url(../img/about/icon.svg);
+    background-repeat: no-repeat;
+    background-position: 0px center;
+  }
+
+  &__img {
+    margin-right: -16px;
+    margin-left: -16px;
+    @media (min-width: 768px) {
+      margin: 0;
+      margin-left: 48px;
+    }
+  }
+
+  &__img img {
+    width: 100%;
+    @media (min-width: 768px) {
+      min-width: 360px;
+      border-radius: 6px;
+    }
+    @media (min-width: 1440px) {
+      min-width: 531px;
+    }
+  }
+}
